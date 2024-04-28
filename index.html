@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotorLeads Inicio de Sesión</title>
+    <link href="assets\copa_logo.png" rel="shortcut icon" type="image/png">
+    <script src = "login.js" type = "text/JavaScript"> </script>
+    <link href="login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<main>
+    <div class="box">
+        <div class="forms-wrap">
+            <form name = "formLogin" autocomplete="off">
+
+                <div class="logo">
+                    <img src="assets\copa_logo_black.png" />
+                    </div>
+                    <div class="heading">
+                    <h2 class="color1">Precios reales para</h2>
+                    <h2 class="color2">transacciones</h2>
+                    <h2 class="color3">reales</h2>
+                </div>
+
+                <div>
+                    <div class="input-wrap">
+                        <label for = "email"> Email </label>
+                        <input
+                        type="text"
+                        name = "email"
+                        id = "email"
+                        minlength="4"
+                        class="input-field"
+                        autocomplete="off"
+                        required
+                        onclick="gray_button('email')"
+                        />
+                    </div>
+
+                    <div class="input-wrap">
+                        <label for = "contrasena"> Contraseña </label>
+                        <input
+                        type="password"
+                        name = "contrasena"
+                        id = "contrasena"
+                        minlength="4"
+                        class="input-field"
+                        autocomplete="off"
+                        required
+                        onclick="gray_button('contrasena')"
+                        />
+                    </div>
+
+                    <div class="login__check">
+                        <div class="login__check-group">
+                            <input type="checkbox"  id="login-check">
+                            <p class="text" style="margin-left: 0.2rem;">Recordarme</p>
+                        </div>
+                        <p class="text">
+                            <a href="">Olvidé mi contraseña</a>
+                        </p>
+                    </div>
+        
+                    <input type="button" name="boton" value="Iniciar Sesión" class="sign-btn" onclick="send_login_data()"/>
+
+                    <p class="text">
+                        ¿Aún no tienes cuenta?
+                        <a href="">Regístrate para empezar</a>
+                    </p>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="carousel">
+            <img src="assets\background_login.png" class="image img-1 show"/>
+        </div>
+
+    </div>
+</main>
+

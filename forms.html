@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Motor Leads</title>
+    <link href="forms.css" rel="stylesheet" type="text/css">
+    <script src = "forms.js" type = "text/JavaScript"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets\copa_logo.png" rel="shortcut icon" type="image/png">
+    <meta charset="utf-8">
+</head>
+
+<body class = "background" >
+
+    <header>
+        <div class="header-image">
+            <img src="assets\copa_logo.png"width=100" height="50">    
+        </div>
+
+        <div class = "user-info">
+            <img src="assets\user.png" id="usericon" width="25" height="25"> 
+            <h1 style = "color: white; " id="username" ></h1>  
+        </div>
+
+    </header>
+
+    <div class="rectangulo-blanco" style="position:relative; top:20px;">
+        <form name = form1>
+            <div align = "center">
+                <label class="text">Selecciona una Marca</label>
+                <br>
+                <select id="marca" onchange="send_marcas()">
+                    <option value="" style="display:none;"></option>
+                </select>
+                <br>
+                <br>        
+                <label class="text">Selecciona un Modelo</label>
+                <br>
+                <select id="modelo" disabled onchange="send_modelos()">
+                    <option value="" style="display:none;"></option>
+                </select>
+                <br>
+                <br>
+                <label class="text" >Selecciona un Año</label>
+                <br>
+                <select id="anio" disabled onchange="send_anio()">
+                    <option value="" style="display:none;"></option>
+                </select>
+
+                <br>
+                <br>
+                <label class="text" >Selecciona una Versión</label>
+                <br>
+                <select id="version" disabled onchange="send_version()">
+                    <option value="" style="display:none;"></option>
+                </select>
+
+                <br>
+                <br>
+                <label class="text">Agrega un kilometraje</label>
+                <br>
+                <input disabled name = "kilometraje" id="kilometraje" type="number">
+
+                <br>
+                <br>
+
+                <label class="text">Selecciona un Color</label>
+                <br>
+                <select id="color" disabled >
+                    <option value="" style="display:none;"></option>
+                    <option value="Verde">Verde</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Gris">Gris</option>
+                    <option value="Marrón">Marrón</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Morado">Morado</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Dorado">Dorado</option>
+                    <option value="Rosa">Rosa</option>
+
+                </select>
+
+                <br>
+
+            <input name ="boton" type = "button"  class ="buttons" value = "Buscar" onclick="send_rest_values()"> 
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
